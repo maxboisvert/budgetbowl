@@ -1,0 +1,48 @@
+<p>
+    <div class="table-responsive" >
+        <table class="table table-hover table-condensed table-striped" ng-controller="TableController as tableCtrl" >
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Payer</th>
+                    <th ng-repeat="member in bucket.members" >
+                        {{member}}
+                    </th>
+
+                    <th><span class="mobile-hidden" >Delete</span></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr ng-repeat="bill in bills" >
+                    <td>{{bill.description}}</td>
+                    <td>{{format.money(bill.price)}}</td>
+                    <td>{{bucket.members[bill.paidBy]}}</td>
+                    <td ng-repeat="contribution in bill.contributions track by $index" >
+
+                        <a
+                            href=""
+                            ng-disabled="state.frozen"
+                            ng-click="ask('Enter an amount', bill.contributions, $index, {amount: true})" >
+                            {{format.ratio(contribution)}}
+                        </a>
+                    </td>
+                    <td>
+                        <a
+                            href=""
+                            ng-disabled="state.frozen"
+                            ng-click="tableCtrl.deleteRow($index)"
+                            tooltip="Delete the current bill"
+                            tooltip-popup-delay="1000" >
+
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</p>

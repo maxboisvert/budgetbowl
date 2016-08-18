@@ -1,0 +1,56 @@
+<p class="controls"  >
+
+    <div class="btn-group" ng-controller="ToolbarController as controlCtrl" >
+
+        <button
+            class="btn btn-default"
+            ng-click="controlCtrl.clear()"
+            tooltip="Create a new budget"
+            tooltip-popup-delay="1000" >
+
+            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+        </button>
+
+        <button
+            class="btn btn-default hidden"
+            ng-click="controlCtrl.save()"
+            tooltip="Save the budget. You will receive an email with the budget's link"
+            tooltip-popup-delay="1000" >
+
+            <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>
+        </button>
+
+        <button
+            class="btn btn-default"
+            ng-click="controlCtrl.addBill()"
+            tooltip="Add a bill to the budget"
+            tooltip-popup-delay="1000"
+            ng-disabled="state.frozen || bucket.members.length == 0" >
+
+            <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+            <span class="mobile-hidden" >Add bill</span>
+        </button>
+
+        <button
+            class="btn btn-default"
+            ng-click="controlCtrl.addMember()"
+            tooltip="Add a member to the budget"
+            tooltip-popup-delay="1000"
+            ng-disabled="state.frozen" >
+
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            <span class="mobile-hidden" >Add member</span>
+        </button>
+
+        <button
+            class="btn btn-default mobile-hidden"
+            ng-click="controlCtrl.print()"
+            tooltip2="Print the current budget"
+            tooltip-popup-delay2="1000" >
+
+            <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+            <span>Print</span>
+        </button>
+
+    </div>
+</p>

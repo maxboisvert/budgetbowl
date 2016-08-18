@@ -1,0 +1,14 @@
+<div>
+    <p>
+        <ul class="list-unstyled" >
+            <li ng-repeat="member in state.members" >
+                <input ng-model="bucket.paidMembers[$index]" type="checkbox" />
+                {{bucket.members[$index]}} {{format.dueText(member.amount)}} bucket
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        Bucket Status : <span class="bucket-status-label" ng-class="state.dueLabel" >{{format.money(state.due)}}</span>
+    </p>
+</div>

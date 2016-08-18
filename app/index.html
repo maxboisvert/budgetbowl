@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="budgetBowlApp" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Don't index this page -->
+    <meta name="robots" content="noindex" />
+
+    <!-- addtohomescreen : the docs says to call it early in the file. -->
+    <link rel="stylesheet" type="text/css" href="vendor/add-to-homescreen/style/addtohomescreen.css">
+    <script src="vendor/add-to-homescreen/src/addtohomescreen.js"></script>
+    <script>
+        // addToHomescreen();
+    </script>
+    <!-- / -->
+
+    <meta name="description" content="BudgetBowl - Easy Team Budgeting">
+    <meta name="author" content="Maxime Boisvert, Sébastien Boisvert">
+
+    <title>Budgetbowl - Smart group bills splitter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- icons from http://www.favicon-generator.org/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <div class="budget-navbar" >
+        <div class="container" >
+            <a href="//budgetbowl.com" class="logo-link" >
+                <img src="img/budgetbowl-logo.png" alt="Budgetbowl logo \$/" >
+                Budgetbowl - Smart group bills splitter
+            </a>
+        </div>
+    </div>
+
+    <div class="container" ng-cloak >
+
+        <p class="header" >
+            <span class="bucket-name"  >
+                <a href="#" ng-click="ask('Enter a bucket name', bucket, 'name')" >{{bucket.name}}</a>
+            </span>
+        </p>
+
+        <div ng-include="'frontend-app/partials/toolbar.html'" ></div>
+        <div ng-include="'frontend-app/partials/table.html'" ></div>
+        <div ng-include="'frontend-app/partials/budget-status.html'" ></div>
+
+    </div>
+
+
+
+    <footer class="blog-footer" >
+        <div class="container" >
+            <div class="pull-right" >
+                © 2016 Budgetbowl
+            </div>
+
+            <p>
+                <a href="mailto:budgetbowlteam@gmail.com" ><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+                <a href="https://twitter.com/BudgetBowl" >t</span></a>
+                <a href="https://www.facebook.com/BudgetBowl" >f</span></a>
+                <a href="https://plus.google.com/102914158121217105131" >G+</span></a>
+            </p>
+
+            <p>
+                <a href="#" onclick="addToHomescreen()" >Add to home screen</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- angular -->
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular/angular-messages.min.js"></script>
+
+
+    <!--
+    <script src="vendor/angular/angular-touch.min.js"></script>
+    -->
+
+    <script src="vendor/angular/ngStorage.min.js"></script>
+    <script src="vendor/angular/validate.min.js"></script>
+
+
+    <!-- angular-ui -->
+    <script src="vendor/angular-ui/ui-bootstrap-tpls-0.13.3.js"></script>
+
+    <!-- bootstrap
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    -->
+
+    <!-- Budgetbowl -->
+    <script src="frontend-app/app.js"></script>
+
+    <script src="frontend-app/controllers/table.controller.js"></script>
+    <script src="frontend-app/controllers/toolbar.controller.js"></script>
+
+    <script src="frontend-app/services/data.service.js"></script>
+    <script src="frontend-app/services/format.service.js"></script>
+    <script src="frontend-app/services/modal.service.js"></script>
+    <script src="frontend-app/services/state.service.js"></script>
+    <script src="frontend-app/services/validation.service.js"></script>
+
+    <script src="frontend-app/directives/form-default.directive.js"></script>
+
+    <!-- GoogleAnalytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-67191097-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>

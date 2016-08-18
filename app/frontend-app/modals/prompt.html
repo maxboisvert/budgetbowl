@@ -1,0 +1,25 @@
+<form
+    name="promptForm"
+    form-default
+    ng-submit="promptForm.$valid && $close(value)" >
+
+    <div class="modal-body">
+
+            <div class="form-group" >
+                <label>{{message}}</label>
+                <input
+                    ui-validate="{{uiValidate}}"
+                    placeholder2="TODO"
+                    name="promptInput"
+                    required
+                    class="form-control"
+                    ng-model="value"
+                    type="text" ></input>
+            </div>
+    </div>
+
+    <div class="modal-footer">
+        <a class="btn" ng-click="$dismiss()">Cancel</a>
+        <button type="submit" class="btn btn-primary" >Ok</button>
+    </div>
+</form>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="budgetbowl-logo.svg"
+   inkscape:export-filename="C:\Users\maxime\Documents\MoneyBucket\marketing2\img\budgetbowl-logo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="103.70703"
+     inkscape:cy="620.47088"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="fill:#cbf9c7;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path3001"
+       sodipodi:cx="425.71429"
+       sodipodi:cy="243.79076"
+       sodipodi:rx="115.71429"
+       sodipodi:ry="115.71429"
+       d="m 541.42858,243.79076 a 115.71429,115.71429 0 1 1 -231.42857,0 115.71429,115.71429 0 1 1 231.42857,0 z"
+       transform="matrix(1.2891176,0,0,1.2891176,-244.19788,47.54227)"
+       inkscape:export-filename="C:\Users\maxime\Documents\MoneyBucket\marketing2\img\budgetbowl-logo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:61.49634552px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#241c1c;fill-opacity:1;stroke:none;font-family:Sans"
+       x="181.58119"
+       y="436.23105"
+       id="text2985"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\maxime\Documents\MoneyBucket\marketing2\img\budgetbowl-logo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="181.58119"
+         y="436.23105"
+         style="font-size:221.38684082px;font-weight:bold;fill:#241c1c;-inkscape-font-specification:Sans Bold">\$/</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:61.49634552px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#241c1c;fill-opacity:1;stroke:none;font-family:Sans"
+       x="243.52194"
+       y="427.88513"
+       id="text2989"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\maxime\Documents\MoneyBucket\marketing2\img\budgetbowl-logo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2991"
+         x="243.52194"
+         y="427.88513"
+         style="font-size:221.38684082px;font-weight:bold;fill:#241c1c;-inkscape-font-specification:Sans Bold">_</tspan></text>
+  </g>
+</svg>

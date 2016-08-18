@@ -1,0 +1,65 @@
+
+.section {
+    margin-top: 4em;
+}
+
+img.mk-img  {
+    max-width: 100%;
+    margin-bottom: 20px;
+
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.budget-navbar {
+    background-color: #CBF9C7;
+}
+
+.budget-navbar .logo {
+    height: 5em;
+}
+
+.jumbotron .logo {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:         drop-shadow(5px 5px 5px #222);
+    height: 9em;
+}
+
+.logo-stores {
+    height: 4em;
+}
+
+.blog-footer {
+    margin-top: 6em;
+    padding: 40px 0;
+    color: #999;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
+
+body {
+    background-color: #F5FFF4;
+}
+
+@media print {
+    .controls,
+    .navBar
+    {
+        display: none;
+    }
+
+}
+
+/*
+    Mobile
+    Under 768px like bootstrap 3
+*/
+@media screen and (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+}

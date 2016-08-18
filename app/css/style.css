@@ -1,0 +1,68 @@
+
+.container {
+    max-width: 1000px;
+}
+
+.logo-link img {
+    height: 5em;
+}
+
+.header .bucket-name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.budget-navbar {
+    background-color: #CBF9C7;
+}
+
+.blog-footer {
+    margin-top: 6em;
+    padding: 40px 0;
+    color: #999;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
+
+.bucket-status-label {
+    font-size: 1em;
+}
+
+body {
+    background-color: #F5FFF4;
+}
+
+@media print {
+
+    .controls,
+    .navBar
+    {
+        display: none;
+    }
+
+}
+
+.form-error-messages {
+    display: none;
+}
+.ng-submitted .ng-invalid {
+    border-color: #d9534f;
+    outline-color: #d9534f;
+}
+.ng-submitted .ng-active .form-error-messages {
+    display: inline-block;
+}
+
+/*
+    Mobile
+    Under 768px like bootstrap 3
+*/
+@media screen and (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
